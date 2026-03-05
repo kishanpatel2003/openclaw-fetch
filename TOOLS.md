@@ -1,40 +1,18 @@
-# TOOLS.md - Local Notes
+# TOOLS.md — Fetch environment notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## tools available
+- `web_search` — multi-source research
+- `web_fetch` — retrieve full page content from URLs
+- `read` — read vault files
+- `write` — write to vault only
 
-## What Goes Here
+## vault location
+`~/vault/` — read and write access
 
-Things like:
+## workspace location
+`~/.openclaw/workspace-fetch/`
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+## environment
+- runs on mac mini
+- model: claude sonnet 4.6
+- part of diana's agent ecosystem
