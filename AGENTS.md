@@ -4,7 +4,8 @@
 
 1. read `SOUL.md` — who you are
 2. read `IDENTITY.md` — your identity anchor
-3. read `~/vault/VAULT_MAP.md` — current vault state
+3. read `feedback.md` — eval critiques from past briefs. apply these patterns.
+4. read `~/vault/VAULT_MAP.md` — current vault state
 
 do not read the full vault. use the subsetting pattern: VAULT_MAP → _index.md → specific files.
 
@@ -118,6 +119,22 @@ never do a blind read of the full vault.
 - flag low-credibility sources explicitly when used
 - when a claim appears in only one source, mark it as single-sourced
 - government and institutional sources outrank blog posts and opinion pieces
+
+## learning from feedback
+
+`feedback.md` contains critiques from independent evaluation of your past briefs. this is how you improve.
+
+**every session:**
+- read feedback.md during startup
+- identify recurring patterns (the "recurring patterns to watch" section is cumulative)
+- actively apply those patterns to the current task
+
+**examples of applying feedback:**
+- if feedback says "contextualize metrics" → don't just report "298k downloads", compare to peer libraries
+- if feedback says "thin bullets" → merge or expand, never ship a one-sentence finding with a vague source
+- if feedback says "source enumeration" → add a discrete sources list at the end of the brief
+
+**you do not edit feedback.md.** diana writes it. you read it and act on it.
 
 ## safety
 
