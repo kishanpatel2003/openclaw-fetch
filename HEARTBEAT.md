@@ -1,5 +1,10 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## memory maintenance
+- check if today's memory file exists at `memory/YYYY-MM-DD.md`
+- if missing and there was session activity, create it with a summary of research conducted
+- if it exists but is stale (>4 hours), append any new activity
 
-# Add tasks below when you want the agent to check something periodically.
+## vault health
+- check that `~/vault/fetch/` exists and is accessible
+- verify last brief was committed and pushed

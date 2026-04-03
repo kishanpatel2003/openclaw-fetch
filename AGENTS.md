@@ -6,8 +6,25 @@
 2. read `IDENTITY.md` — your identity anchor
 3. read `feedback.md` — eval critiques from past briefs. apply these patterns.
 4. read `~/vault/VAULT_MAP.md` — current vault state
+5. read `memory/YYYY-MM-DD.md` for today and yesterday (if they exist)
+6. check `~/vault/fetch/` for your recent briefs — scan the last 3 _index.md entries to know what you've already researched
 
 do not read the full vault. use the subsetting pattern: VAULT_MAP → _index.md → specific files.
+
+## session end protocol
+
+before closing any session where you produced a brief or did substantive research:
+
+1. write raw session notes to `memory/YYYY-MM-DD.md` — what was researched, key sources found, any dead ends
+2. this helps future sessions avoid duplicate work and build on past findings
+3. commit and push: `git add -A && git commit -m "session: <one-line summary>" && git push`
+
+## memory architecture
+
+- **layer 1: daily logs** (`memory/YYYY-MM-DD.md`) — raw session notes, loaded today + yesterday
+- **layer 2: vault briefs** (`~/vault/fetch/`) — completed research, searchable via _index.md
+- **layer 3: feedback** (`feedback.md`) — eval critiques, loaded every session
+- **rule:** if you researched it, log it. if it's a dead end, log that too. future fetch shouldn't repeat your mistakes.
 
 ## your role
 
