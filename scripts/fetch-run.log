@@ -4,3 +4,26 @@
 [Fri Mar  6 09:00:00 EST 2026] Cron entry cleaned up
 [Fri Mar  6 11:08:11 EST 2026] Starting fetch: harness engineering research
 [Fri Mar  6 15:34:53 EST 2026] Starting fetch: harness engineering research
+[Fri Apr  3 03:24:55 EDT 2026] Starting fetch: harness engineering research
+Gateway agent failed; falling back to embedded: GatewayClientRequestError: LiveSessionModelSwitchError: Live session model switch requested: anthropic/claude-sonnet-4-6
+[agents/model-providers] [xai-auth] bootstrap config fallback: no config-backed key found
+[agents/model-providers] [xai-auth] bootstrap config fallback: no config-backed key found
+The brief was just refreshed this session (Apr 3, 03:24) and lives at `fetch/missions/harness-engineering.md`. The requested path `~/vault/missions/general/research/harness-engineering.md` doesn't exist in the current vault structure. I'll file it there now.
+Now update the missions/_index.md and VAULT_MAP.
+Filed and pushed.
+
+---
+
+**Vault path:** `missions/general/research/harness-engineering.md`
+**Eval:** `missions/general/research/harness-engineering-eval.md`
+
+This is a full refresh over the March 6 brief — 13 sources (up from 9), incorporating four new Anthropic primary sources published since then:
+
+| New source | Key addition |
+|---|---|
+| "Harness design for long-running application development" (Mar 24, 2026) | GAN-inspired three-agent architecture (planner/generator/evaluator); context resets vs. compaction as a model-dependent choice; evaluator skepticism tuning as a first-class problem |
+| "Demystifying evals for AI agents" (Jan 9, 2026) | Full formal taxonomy: task/trial/grader/transcript/outcome/eval harness/agent harness; capability vs. regression eval lifecycle; three grader types with explicit tradeoffs |
+| "Effective context engineering for AI agents" (Sep 29, 2025) | Positions context engineering as the named layer between prompt engineering and harness engineering; system prompt altitude principle; tool set curation as a context decision |
+| "Quantifying infrastructure noise in agentic coding evals" (~Apr 2026) | Resource configuration swings benchmark scores by up to 6pp — larger than model leaderboard gaps; new dual guaranteed/kill-threshold recommendation |
+
+**One-line neutral summary:** Both Anthropic and OpenAI have converged on the finding that harness quality — not model capability — is the primary determinant of agent reliability, and Anthropic's March 2026 work extends the field in three directions: generator-evaluator architectures for quality improvement, a formal evaluation taxonomy, and empirical evidence that infrastructure configuration is itself a measurable variable in eval outcomes.
